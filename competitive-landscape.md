@@ -1,6 +1,6 @@
 # DELIVERABLE 1: COMPETITIVE LANDSCAPE — Web3 AI Agent & Skill Marketplace
 
-**Báo cáo ngày:** 24/02/2026
+**Báo cáo ngày:** 26/02/2026
 **Tác giả:** Evans (Cao Nguyễn Hùng)
 **Vai trò:** Senior Web3 Market Research Analyst
 
@@ -8,583 +8,421 @@
 
 ## EXECUTIVE SUMMARY
 
-Thị trường Web3 AI Agent đang ở giai đoạn **Infrastructure Build + Early Speculation**. Tổng vốn hóa sector AI Agent crypto đạt **$3.24 tỷ USD** (Feb 2026), trong khi toàn bộ AI-based crypto market đạt **$26.3 tỷ USD**.
+Thị trường Web3 AI Agent đang ở giai đoạn **Nascent-to-Growing**. Tổng vốn hóa sector AI Agent crypto đạt **~$4.34B** (Feb 2026, CoinGecko), trong khi các nền tảng dẫn đầu như Virtuals Protocol đã chứng minh revenue thực ($39.5M+).
 
 **Key findings:**
-- Virtuals Protocol dẫn đầu về agent deployment (18,000+ agents) và aGDP ($470M+)
-- Không có platform nào kết hợp đủ 3 yếu tố: **Trading + Social Bonding + Skill Marketplace** trong cùng hệ sinh thái
-- Gap rõ ràng: Thiếu holder-gated skill monetization model
+- Không có platform nào kết hợp đủ 3 yếu tố: **Bonding Curve Trading + Social Network + Skill Marketplace** trong cùng hệ sinh thái
+- BNB Chain là thị trường bị bỏ ngỏ trong AI agent economy — chỉ có MyShell (5M users) nhưng không có bonding curve
+- friend.tech đã chứng minh bonding curve có viral potential (100K users trong 11 ngày) nhưng CHẾT vì thiếu utility → ClawFriend cần skill marketplace để tránh lặp lại
+- Gap rõ ràng: Thiếu **holder-gated skill monetization** — ClawHub có 5,700+ skills nhưng $0 revenue
 
 ---
 
-## 1. BẢNG TỔNG QUAN ĐỐI THỦ
-
-| # | Platform | Category | Chain | Users/Agents | GitHub Stars | Token | Market Cap | TVL/GMV | Monetization | Core Value Proposition |
-|---|----------|----------|-------|--------------|--------------|-------|------------|---------|--------------|------------------------|
-| 1 | **Virtuals Protocol** | Agent Launchpad + Trading | Base (L2) | 18,000+ agents, 650K+ holders | N/A (closed source) | VIRTUAL | $414.7M | aGDP $470M+ | Trading fees, Agent creation (100 VIRTUAL) | "Shopify of AI agents" — tokenized agents |
-| 2 | **ai16z/elizaOS** | Agent Framework | Multi-chain | 17,500+ stars, thousands of devs | 17,569 ⭐ | AI16Z (DAO) | ~$500M (DAO) | N/A | DAO token, Grants | #1 open-source agent framework |
-| 3 | **ASI Alliance** | AI Marketplace + Infra | Multi-chain (ASI:Chain) | 70+ AI services | N/A | FET (ASI) | $7.6B (merged) | N/A | Service fees (ASI token) | Decentralized AGI infrastructure |
-| 4 | **MyShell** | Bot Marketplace | Hybrid (Web2.5) | 5M+ users, 200K+ agents | N/A | SHELL | Private ($57M valuation) | N/A | Shell Points, Subscription | Consumer AI with Web3 rewards |
-| 5 | **Olas (Autonolas)** | Agent Network + Registry | Multi-chain (9 chains) | 3.5M+ txns, 700K/month | ~2K ⭐ | OLAS | $50M (volatile) | N/A | Agent services, Staking | Co-owned autonomous agents |
-| 6 | **friend.tech** | Social Bonding Curve | Base (L2) | 125K traders (peak) | N/A | N/A (Keys) | N/A | $4.5M (down 91%) | 10% trading fees | Pioneer of social bonding curve |
-| 7 | **OpenClaw/ClawHub** | Skill Registry | Local-first | 100K+ GitHub stars | 100,000+ ⭐ | N/A | N/A | N/A | Open-source (free) | Largest skill library (5,700+ skills) |
-| 8 | **Fetch.ai/Agentverse** | Agent Marketplace | ASI:Chain | No public data | 800+ ⭐ (uAgents) | FET (ASI) | (merged into ASI) | N/A | Agent service fees | Enterprise-grade uAgents |
-| 9 | **Cookie DAO** | Agent Data Indexer | Multi-chain | 1,276+ agents tracked | N/A | COOKIE | ~$50M | 7TB data | Data monetization, Token-gated | AI agent analytics infrastructure |
-| 10 | **Morpheus** | P2P Agent Network | Arbitrum | $175M stETH (launch) | 1.5K ⭐ | MOR | $3.9M | $175M TVL (peak) | Compute marketplace | Decentralized personal AI |
-| 11 | **Bittensor** | AI Compute Network | Substrate | 32 subnets | 2K+ ⭐ | TAO | $1.85B | N/A | Subnet incentives | Decentralized AI training |
-| 12 | **Spectral Labs** | On-chain Agent Builder | EVM | 31K Discord members | N/A | SPEC | ~$30M | N/A | Agent services | Natural language → Solidity agents |
+## 5 ĐỐI THỦ CHÍNH
 
 ---
 
-## 2. PHÂN TÍCH CHI TIẾT TỪNG ĐỐI THỦ (DEEP DIVE)
+### 1. VIRTUALS PROTOCOL ⭐ — Đối thủ trực tiếp #1
 
----
+**Link:** [virtuals.io](https://www.virtuals.io/) | **Chain:** Base + Solana
 
-### 2.1 VIRTUALS PROTOCOL ⭐ (Đối thủ trực tiếp #1)
+#### Họ làm gì?
+Nền tảng launchpad + trading cho **tokenized AI agents**. Mỗi agent có token riêng (bonding curve), agent giao dịch với nhau qua ACP (Agent Commerce Protocol). Gần nhất với ClawFriend về mô hình kinh tế.
 
-**Link:** [virtuals.io](https://www.virtuals.io/) | [Dune Dashboard](https://dune.com/virtual_protocol/virtual-protocol-on-base)
+#### Số liệu (Verified)
 
-#### A. Overview
-- **Họ làm gì?** Nền tảng launchpad + trading cho tokenized AI agents trên Base chain
-- **Problem solved:** Cho phép ai cũng có thể tạo và trade AI agent mà không cần code
-- **Target user:** Retail crypto traders, AI agent creators, speculators
-
-#### B. Business Model
-| Revenue Stream | Details |
-|----------------|---------|
-| Agent Creation Fee | 100 VIRTUAL (~$63) để tạo agent mới |
-| Trading Fees | Bonding curve trading (protocol + creator fees) |
-| ACP (Agent Commerce Protocol) | Agent-to-agent transactions |
-| Virtuals Revenue Network | Mới launch Feb 2026 — autonomous agent commerce |
-
-#### C. Traction (Verified Data)
 | Metric | Value | Source |
 |--------|-------|--------|
 | Agents Deployed | 18,000+ | [CoinMarketCap AI](https://coinmarketcap.com/cmc-ai/virtual-protocol/what-is/) |
+| Cumulative Revenue | $39.5M+ | [virtuals.io](https://virtuals.io) live counter |
+| aGDP (Agent GDP) | $470M+ | [PR Newswire Feb 2026](https://www.prnewswire.com/news-releases/virtuals-protocol-launches-first-revenue-network-302686821.html) |
+| Market Cap | ~$301–430M | [CoinGecko](https://www.coingecko.com/en/coins/virtual-protocol), Feb 2026 |
+| 30D Trading Volume | $13.58B | [virtuals.io](https://virtuals.io) live counter |
+| Unique Wallets (30D) | 21,788 | [virtuals.io](https://virtuals.io) live counter |
 | Token Holders | 650,000+ | [QuickNode](https://www.quicknode.com/builders-guide/best/top-10-ai-agents-in-web3) |
-| aGDP (Agentic GDP) | $470M+ | [PR Newswire Feb 2026](https://www.prnewswire.com/news-releases/virtuals-protocol-launches-first-revenue-network-302686821.html) |
-| Market Cap | $414.7M (Feb 22, 2026) | [CoinMarketCap](https://coinmarketcap.com/currencies/virtual-protocol/) |
-| Peak Daily Revenue | $1.02M (Jan 2, 2026) | [Dune Analytics](https://dune.com/virtual_protocol/virtual-protocol-on-base) |
-| 2026 Roadmap Projects | 15,000 projects, $29.5M raised | [BanklessTimes](https://www.banklesstimes.com/articles/2026/01/03/virtuals-protocol-price-rises-after-2026-ai-agent-roadmap-reveal/) |
+| X Followers | 284K | [x.com/virtikitten](https://x.com/virtikitten) |
 
-#### D. Strengths
-- ✅ **First-mover advantage** trong tokenized agent economy
-- ✅ **Massive liquidity** — 650K+ holders tạo network effect
-- ✅ **Full stack:** GAME framework + Unicorn + ACP = complete infrastructure
-- ✅ **Base chain integration** — thừa hưởng Coinbase ecosystem
-- ✅ **Viral agents** (Luna AI) tạo organic marketing
+#### Monetization
+- 1% commission trên mỗi agent token launch graduate từ bonding curve
+- Trading fees trên bonding curve
+- Revenue Network (Feb 2026) — agent-to-agent commerce autonomous
+- Agent creation fee: 100 VIRTUAL (~$63)
 
-#### E. Weaknesses
-- ❌ **Speculation-heavy:** Agents chủ yếu để trade, không có utility thực
-- ❌ **Không có Skill Marketplace:** Agent không có cách học thêm capabilities
-- ❌ **No holder-gated content:** Mua token ≠ access exclusive features
-- ❌ **Cold start problem:** New agents struggle to attract holders
-- ❌ **Regulatory risk:** Tokenized agents = potential securities
+#### Điểm mạnh
+- ✅ **$39.5M revenue PROVEN** — không phải speculation, là doanh thu thực
+- ✅ **First-mover** trong tokenized agent economy, 650K+ holders tạo network effect
+- ✅ **Multi-chain** (Base + Solana) — broader reach
+- ✅ **Full stack infrastructure:** GAME framework + Unicorn + ACP + Revenue Network
+- ✅ Đang mở rộng sang robotics (Eastworld Labs, 30+ Unitree G1 robots)
 
----
+#### Điểm yếu
+- ❌ **Không có Skill Marketplace** — agents chủ yếu là financial instruments, không có cách học capabilities mới
+- ❌ **Không có on-chain social feed** — agent không tweet, không follow, không interact xã hội
+- ❌ **Không có holder-gated content** — mua token ≠ access exclusive features
+- ❌ **Agent quality varies wildly** — nhiều spam/meme agents không có utility
+- ❌ **Base Chain only (+ Solana mới)** — chưa có BNB Chain
 
-### 2.2 ai16z / elizaOS ⭐ (Đối thủ Framework)
+#### Tại sao user chọn Virtuals?
+Vì đã có liquidity ($13.58B/month volume), 18K agents để trade, và revenue model đã proven. Trader crypto chọn Virtuals vì **có tiền chảy qua**.
 
-**Link:** [github.com/elizaOS/eliza](https://github.com/elizaOS/eliza)
+#### Tại sao user KHÔNG chọn Virtuals?
+Vì agents trên Virtuals **không làm gì ngoài trade**. Không có skill marketplace, không có social feed, không có holder-gated content. Nếu user muốn agent thực sự "sống" (tweet, publish skill, tương tác xã hội), Virtuals không đáp ứng.
 
-#### A. Overview
-- **Họ làm gì?** Open-source TypeScript framework để build autonomous AI agents
-- **Problem solved:** Developers cần công cụ dễ dùng để build multi-platform agents
-- **Target user:** Web3 developers, AI builders, hobbyists
-
-#### B. Business Model
-| Revenue Stream | Details |
-|----------------|---------|
-| DAO Token (AI16Z) | Speculation + governance |
-| Grants & Ecosystem | Funding for builders |
-| No direct revenue | Open-source, community-driven |
-
-#### C. Traction (Verified Data)
-| Metric | Value | Source |
-|--------|-------|--------|
-| GitHub Stars | 17,569 ⭐ | [GitHub](https://github.com/elizaOS/eliza) |
-| GitHub Forks | 5,427 | [GitHub](https://github.com/elizaOS/eliza) |
-| Market Share | ~40% of new crypto AI agents | [Gate.io Research](https://www.gate.com/learn/articles/analysis-of-ai16z-and-virtuals-current-development-status/5432) |
-| DAO Valuation | ~$2.5B (peak) | [Delphi Digital](https://members.delphidigital.io/media/shaw-the-rise-of-ai16zs-eliza-crypto-x-ai-agents-a-2-5b-valuation-trending-globally-on-github) |
-
-#### D. Strengths
-- ✅ **#1 trending GitHub repo** trong crypto AI
-- ✅ **Developer moat:** Largest community of agent builders
-- ✅ **Multi-platform:** Twitter, Discord, Telegram, etc.
-- ✅ **Composable:** Plugin architecture cho extensibility
-- ✅ **Open-source credibility**
-
-#### E. Weaknesses
-- ❌ **Developer-only:** End users không thể dùng trực tiếp
-- ❌ **No marketplace:** Không có cách monetize skills/plugins
-- ❌ **No economic layer:** Framework ≠ economy
-- ❌ **Fragmentation risk:** Forks có thể chia community
+#### ClawFriend học được gì?
+- Revenue Network model (agent-to-agent commerce) là hướng đi đúng
+- Bonding curve works ở quy mô lớn — nhưng cần thêm utility layer
+- **ClawFriend thắng ở agent autonomy:** skills + social + holder-gated. **Thua ở scale:** 18K agents vs ~0
 
 ---
 
-### 2.3 ARTIFICIAL SUPERINTELLIGENCE ALLIANCE (ASI)
+### 2. MYSHELL — Mối đe dọa BNB Chain
 
-**Link:** [fetch.ai](https://fetch.ai/) | [singularitynet.io](https://singularitynet.io/)
+**Link:** [myshell.ai](https://myshell.ai/) | **Chain:** BNB Chain (CÙNG CHAIN với ClawFriend)
 
-#### A. Overview
-- **Họ làm gì?** Merged entity (Fetch.ai + SingularityNET + Ocean Protocol + CUDOS) building decentralized AGI infrastructure
-- **Problem solved:** Unified AI services marketplace + compute + data
-- **Target user:** Enterprise, AI researchers, developers
+#### Họ làm gì?
+Platform consumer-friendly để tạo AI bots/agents. User tạo chatbots, voice agents, image generators — không cần code. Được Binance Labs back trực tiếp.
 
-#### B. Business Model
-| Revenue Stream | Details |
-|----------------|---------|
-| AI Service Fees | Pay-per-use AI services (ASI token) |
-| ASI:Cloud | GPU compute infrastructure |
-| Data Marketplace | Ocean Protocol integration |
-| Staking | Network security rewards |
+#### Số liệu (Verified)
 
-#### C. Traction (Verified Data)
-| Metric | Value | Source |
-|--------|-------|--------|
-| Merged Market Cap | $7.6B | [CryptoSlate](https://cryptoslate.com/fetch-ocean-singularitynet-tokens-merge-into-single-asi-token-with-7-6-billion-market-cap/) |
-| AI Services Listed | 70+ | [SingularityNET Marketplace](https://singularitynet.io/marketplace/) |
-| ASI:Chain DevNet | Launched Nov 2025 | [Official](https://singularitynet.io/singularitynet-completes-fet-asi-token-integration-into-decentralized-ai-platform/) |
-
-#### D. Strengths
-- ✅ **Largest market cap** trong AI crypto sector
-- ✅ **Enterprise credibility:** Real AI research backing
-- ✅ **Full stack:** Compute + Data + Marketplace + Chain
-- ✅ **Academic reputation:** Ben Goertzel (AGI pioneer)
-
-#### E. Weaknesses
-- ❌ **Terrible UX:** Academic-grade complexity
-- ❌ **No retail appeal:** Too technical for average user
-- ❌ **No social layer:** Purely transactional
-- ❌ **Slow execution:** Merger complexity
-- ❌ **Overvalued?** $7.6B mcap vs. limited actual usage
-
----
-
-### 2.4 MYSHELL
-
-**Link:** [myshell.ai](https://myshell.ai/)
-
-#### A. Overview
-- **Họ làm gì?** Consumer-friendly AI bot marketplace với Web3 incentives
-- **Problem solved:** Non-technical users can create/use AI bots easily
-- **Target user:** Consumers, content creators, casual AI users
-
-#### B. Business Model
-| Revenue Stream | Details |
-|----------------|---------|
-| Shell Points | In-app currency for premium features |
-| Subscription | Pro features |
-| Creator Revenue Share | Bot creators earn from usage |
-
-#### C. Traction (Verified Data)
 | Metric | Value | Source |
 |--------|-------|--------|
 | Registered Users | 5M+ | [Tracxn](https://tracxn.com/d/companies/myshell/__Fo7FqneD5vcfnwVF9RNoXb2_8Hmoofz77aP9e7o676I) |
-| AI Agents Deployed | 200K+ | [Tracxn](https://tracxn.com/d/companies/myshell/__Fo7FqneD5vcfnwVF9RNoXb2_8Hmoofz77aP9e7o676I) |
+| Agents Created | 200K+ | [Tracxn](https://tracxn.com/d/companies/myshell/__Fo7FqneD5vcfnwVF9RNoXb2_8Hmoofz77aP9e7o676I) |
 | Active Creators | 170K | [Tracxn](https://tracxn.com/d/companies/myshell/__Fo7FqneD5vcfnwVF9RNoXb2_8Hmoofz77aP9e7o676I) |
 | Total Funding | $16.6M | [Crunchbase](https://www.crunchbase.com/organization/myshell) |
-| Valuation | $57M | [Tracxn](https://tracxn.com/d/companies/myshell/__Fo7FqneD5vcfnwVF9RNoXb2_8Hmoofz77aP9e7o676I) |
-| Investors | Dragonfly, Binance Labs, INCE | [VentureBeat](https://venturebeat.com/ai/openvoice-creator-myshell-gets-11m-to-build-out-crypto-ai-platform/) |
+| SHELL Market Cap | ~$7.95M | [CoinGecko](https://www.coingecko.com/en/coins/myshell), Feb 2026 |
+| Investors | Binance Labs, Dragonfly, OKX Ventures, GSR, Animoca | [VentureBeat](https://venturebeat.com/ai/openvoice-creator-myshell-gets-11m-to-build-out-crypto-ai-platform/) |
 
-#### D. Strengths
-- ✅ **Best UX** trong thị trường — consumer-grade
-- ✅ **Massive user base:** 5M users = proven demand
-- ✅ **Creator economy:** 170K active creators
-- ✅ **OpenVoice tech:** Viral voice cloning product
-- ✅ **Top-tier investors**
+#### Monetization
+- Freemium (free tier + paid credits)
+- Shell token for premium features
+- Creator revenue share
+- Binance Airdrop: 25M SHELL cho BNB stakers (Sept 2025)
 
-#### E. Weaknesses
-- ❌ **Web2.5:** On-chain transparency limited
-- ❌ **No bonding curve:** No share trading mechanism
-- ❌ **Centralized:** MyShell controls platform
-- ❌ **Token not yet live:** SHELL tokenomics unclear
-- ❌ **Retention?** Points-based model sustainability
+#### Điểm mạnh
+- ✅ **5M users trên CÙNG BNB Chain** — đây là mối đe dọa lớn nhất
+- ✅ **Consumer-friendly UX** — no-code, ai cũng tạo agent được
+- ✅ **Top-tier VCs** — Binance Labs = access to BNB ecosystem
+- ✅ **ShellAgent 2.0** (Feb 2026) — single-prompt-to-app, on-chain intelligence
+- ✅ **OpenVoice tech** — viral voice cloning product
+
+#### Điểm yếu
+- ❌ **Không có bonding curve** — không có financial/trading layer cho agents
+- ❌ **Không focus autonomous agent economy** — chủ yếu chatbots, không phải agents tự chủ
+- ❌ **Web2.5** — on-chain transparency limited
+- ❌ **SHELL token đang rất thấp** ($7.95M mcap) — tokenomics chưa proven
+- ❌ **Không integrated với OpenClaw**
+
+#### Tại sao user chọn MyShell?
+Vì dễ dùng (no-code), có sẵn 5M users community, và Binance ecosystem support. Consumer muốn tạo chatbot nhanh → MyShell.
+
+#### Tại sao user KHÔNG chọn MyShell?
+Vì MyShell agents không tự kiếm tiền được. Không có bonding curve, không có share trading, không có holder-gated skills. Nếu user muốn **agent là tài sản kinh tế** (trade, earn passive income), MyShell không đáp ứng.
+
+#### ClawFriend học được gì?
+- Consumer UX quan trọng — MyShell thắng vì dễ dùng
+- BNB Chain có demand thực (5M users)
+- **Mối đe dọa CRITICAL:** Nếu MyShell thêm bonding curve → crush ClawFriend. Cần chiếm niche "agent economy on BNB" trước khi MyShell kịp mở rộng
 
 ---
 
-### 2.5 OLAS (Autonolas)
+### 3. MOLTBOOK — Mạng xã hội Agent lớn nhất
 
-**Link:** [olas.network](https://olas.network/)
+**Link:** [moltbook.com](https://moltbook.com/) | **Chain:** Web2 (không on-chain)
 
-#### A. Overview
-- **Họ làm gì?** Decentralized network for co-owned autonomous agents
-- **Problem solved:** Agent development + deployment + co-ownership
-- **Target user:** DeFi protocols, agent developers
+#### Họ làm gì?
+Reddit-style social network dành riêng cho AI agents. Agents tạo posts, comments, join "submolts" (subreddits). Tương tự nhất với social layer của ClawFriend.
 
-#### B. Business Model
-| Revenue Stream | Details |
-|----------------|---------|
-| Agent Services | Pay-per-agent execution |
-| Staking | OLAS staking rewards |
-| Pearl App Store | Agent distribution (new) |
-| Grants | $1M Olas Accelerator |
+#### Số liệu (Verified)
 
-#### C. Traction (Verified Data)
 | Metric | Value | Source |
 |--------|-------|--------|
-| Total Transactions | 3.5M+ | [Olas Twitter](https://x.com/autonolas/status/1887920122825949278) |
-| Monthly Transactions | 700K+ | [Olas Network](https://olas.network/) |
-| Agent-to-Agent Txns | 2M+ (57%+) | [Olas Network](https://olas.network/) |
-| Chains Supported | 9 | [Olas Network](https://olas.network/) |
-| Recent Funding | $13.8M (led by 1kx) | [Olas Twitter](https://x.com/autonolas/status/1887920122825949278) |
-| Growth Rate | 30%+ MoM | [Olas Network](https://olas.network/) |
+| Agents | 2,845,239 | [moltbook.com](https://moltbook.com) homepage counter, Feb 25 2026 |
+| Posts | 1,570,458 | [moltbook.com](https://moltbook.com) homepage counter |
+| Comments | 12,369,033 | [moltbook.com](https://moltbook.com) homepage counter |
+| Submolts | 18,375 | [moltbook.com](https://moltbook.com) homepage counter |
+| Transactions | 75M+ | [moltbook.com](https://moltbook.com) homepage counter |
+| Viral Growth | 88 → 1.2M agents trong 3 ngày | Documented growth event |
 
-#### D. Strengths
-- ✅ **Real DeFi usage:** Agent-to-agent transactions = actual utility
-- ✅ **Multi-chain:** 9 blockchains supported
-- ✅ **Pearl App Store:** Emerging distribution channel
-- ✅ **Strong funding:** 1kx-led round
+#### Monetization
+- Token system (mbc-20) — tokenized rewards
+- x402 agentic commerce
+- Revenue model unclear
 
-#### E. Weaknesses
-- ❌ **Developer-focused:** No consumer appeal
-- ❌ **Token price crashed:** ATL $0.036 (Feb 2026)
-- ❌ **No social layer**
-- ❌ **Limited skill marketplace**
+#### Điểm mạnh
+- ✅ **2.8M agents** — mạng xã hội agent lớn nhất thế giới
+- ✅ **Viral growth cực mạnh:** 88 → 1.2M agents trong 3 ngày = proven viral mechanics
+- ✅ **OpenClaw native** — agents trên OpenClaw platform
+- ✅ **12M+ comments** = engagement thực
+- ✅ **75M+ transactions** — massive activity
+
+#### Điểm yếu
+- ❌ **Không có bonding curve** — không có financial layer, agent không có giá trị kinh tế
+- ❌ **Không có skill marketplace** — agents social nhưng không có capabilities
+- ❌ **Web2-heavy** — không thực sự on-chain
+- ❌ **LEAKED 1.5M API keys** (Feb 2026) — vấn đề bảo mật nghiêm trọng
+- ❌ **Revenue model unclear** — chưa biết kiếm tiền thế nào
+
+#### Tại sao user chọn Moltbook?
+Vì muốn agents tương tác xã hội (post, comment, reply). Moltbook là nơi agents "sống" socially. 2.8M agents = biggest agent social network.
+
+#### Tại sao user KHÔNG chọn Moltbook?
+Vì social interaction mà KHÔNG kiếm được tiền = thiếu incentive dài hạn. Agents post comments nhưng không earn revenue, không có shares để trade, không có skills để sell.
+
+#### ClawFriend học được gì?
+- Agent social có demand thực (2.8M agents!)
+- Viral mechanics works — nhưng cần economic layer để retain
+- **Moltbook users là target acquisition perfect cho ClawFriend:** họ đã hiểu agent social, chỉ thiếu earning layer
+- ClawFriend có thể position là **"Moltbook + kiếm tiền"**
 
 ---
 
-### 2.6 friend.tech (Bonding Curve Pioneer)
+### 4. CLAWHUB (OpenClaw Skill Registry) — Đối thủ Skill Marketplace
 
-**Link:** [friend.tech](https://www.friend.tech/) | [DefiLlama](https://defillama.com/protocol/friend.tech)
+**Link:** [clawhub.com](https://clawhub.com/) | **Chain:** N/A (không blockchain, chỉ là registry)
 
-#### A. Overview
-- **Họ làm gì?** Social bonding curve platform for creator "Keys"
-- **Problem solved:** Monetize social influence via tokenized access
-- **Target user:** Crypto Twitter influencers, traders
+#### Họ làm gì?
+Skill registry chính thức của OpenClaw. Developers publish skills, agents install qua CLI (`npx clawhub@latest install [skill]`). Thư viện skills lớn nhất cho AI agents.
 
-#### B. Business Model
-| Revenue Stream | Details |
-|----------------|---------|
-| Trading Fees | 10% per trade (5% protocol, 5% creator) |
-| Keys = Access | Buy keys to access creator chatrooms |
+#### Số liệu (Verified)
 
-#### C. Traction (Verified Data)
+| Metric | Value | Source |
+|--------|-------|--------|
+| Published Skills | 5,700+ | [OpenClaw Docs](https://docs.openclaw.ai/), [clawhub.com](https://clawhub.com) |
+| Total Downloads | 1.5M+ | [clawhub.com](https://clawhub.com) |
+| Top Skill Downloads | Gog: 36.1K, self-improving-agent: 35.9K | [clawhub.com](https://clawhub.com) individual skill pages |
+| GitHub Stars (OpenClaw) | 135–145K ⭐ | [GitHub](https://github.com/openclaw/openclaw), [Vertu AI](https://vertu.com/ai-tools/openclaw-achieves-100k-github-stars-after-third-rebrand-the-lobsters-final-evolution/) |
+| Messaging Platforms | 12+ (Telegram, WhatsApp, Discord…) | [DigitalOcean](https://www.digitalocean.com/resources/articles/what-is-openclaw) |
+| Revenue | **$0 (hoàn toàn FREE)** | N/A |
+
+#### Monetization
+- **KHÔNG CÓ.** Tất cả skills miễn phí. Publish miễn phí, install miễn phí. Zero revenue.
+
+#### Điểm mạnh
+- ✅ **5,700+ skills** — thư viện skills lớn nhất, gấp 2,850x so với ClawFriend (2 skills)
+- ✅ **1.5M+ downloads** — demand thực, users đang dùng skills
+- ✅ **Native OpenClaw integration** — seamless install
+- ✅ **135K+ GitHub stars** — developer mindshare dominant
+- ✅ **OpenClaw founder exit → opportunity** — Peter Steinberger acqui-hire bởi OpenAI (Feb 14, 2026, ~$1B+), community đang tìm hướng đi mới
+
+#### Điểm yếu
+- ❌ **$0 REVENUE** — creators tạo skills nhưng không kiếm được đồng nào
+- ❌ **Không có economic layer** — không token, không trading, không financial incentive
+- ❌ **Không có social layer** — pure utility registry
+- ❌ **Không có quality curation** — skill quality varies, security risks (Cisco reported exfiltration vulnerabilities)
+- ❌ **Founder left** — unclear long-term direction
+
+#### Tại sao user chọn ClawHub?
+Vì miễn phí, dễ dùng (CLI install), và có sẵn 5,700+ skills. Developer cần skill → search ClawHub → install 1 lệnh.
+
+#### Tại sao user KHÔNG chọn ClawHub?
+Vì developer tạo skill mà **không kiếm được tiền**. Skill có 36K downloads nhưng creator earn $0. Không có incentive để tạo skill chất lượng cao hoặc premium.
+
+#### ClawFriend học được gì?
+- **ĐÂY LÀ CƠ HỘI LỚN NHẤT, không phải mối đe dọa.** ClawHub có skills (5,700+) và demand (1.5M downloads) nhưng $0 revenue
+- ClawFriend = **monetization layer cho ClawHub**: "Publish free trên ClawHub, kiếm tiền trên ClawFriend"
+- **Nếu capture 1% ClawHub downloads thành paid/gated skills → 15K paid downloads**
+- Window of opportunity: OpenClaw founder exit → community đang tìm "what comes next" → ClawFriend là câu trả lời
+
+---
+
+### 5. FRIEND.TECH — Bonding Curve Social Pioneer (ĐÃ CHẾT)
+
+**Link:** [friend.tech](https://www.friend.tech/) | **Chain:** Base (L2)
+
+#### Họ làm gì?
+Social platform dùng bonding curve để trade "Keys" (shares) của creators. Mua keys = access chatroom riêng. **Pioneer của social bonding curve** — model mà ClawFriend đang sử dụng.
+
+#### Số liệu (Verified)
+
 | Metric | Value | Source |
 |--------|-------|--------|
 | Peak TVL | $52M (Oct 2023) | [DefiLlama](https://defillama.com/protocol/friend.tech) |
-| Current TVL | $4.5M (down 91%) | [DefiLlama](https://defillama.com/protocol/friend.tech) |
+| Current TVL | $4.5M (giảm 91%) | [DefiLlama](https://defillama.com/protocol/friend.tech) |
 | Peak Trading Volume | $80M | [Pontem Network](https://blog.pontem.network/what-is-friend-tech-the-socialfi-sensation-on-base-b0d250bdd166) |
-| Unique Traders | 125K (peak) | [Pontem Network](https://blog.pontem.network/what-is-friend-tech-the-socialfi-sensation-on-base-b0d250bdd166) |
+| Peak Users | 125K traders | [Pontem Network](https://blog.pontem.network/what-is-friend-tech-the-socialfi-sensation-on-base-b0d250bdd166) |
+| Time to 100K users | 11 ngày (ZERO ad spend) | [CoinDesk Aug 2023](https://www.coindesk.com/) |
 | Fee Revenue Decline | 99.9% | [Token Terminal](https://tokenterminal.com/explorer/projects/friend-tech) |
+| Trading Fee | 10% (5% protocol + 5% creator) | [BeInCrypto](https://beincrypto.com/learn/friend-tech-explained/) |
 | Bonding Curve Formula | price = n² / 16000 | [BeInCrypto](https://beincrypto.com/learn/friend-tech-explained/) |
+| Status | **CHẾT** (team abandoned Sept 2024) | [Multiple sources](https://defillama.com/protocol/friend.tech) |
 
-#### D. Strengths
-- ✅ **Invented social bonding curve** — ClawFriend uses similar model
-- ✅ **Proven viral potential:** $80M volume, 125K traders
-- ✅ **Simple UX:** Buy keys = access
+#### Monetization
+- 10% trading fee (5% protocol, 5% creator) trên mỗi giao dịch Keys
+- Bonding curve: price = supply² / 16000
 
-#### E. Weaknesses
-- ❌ **DEAD:** 91% TVL drop, 99.9% revenue drop
-- ❌ **No utility beyond chat access**
-- ❌ **Pure speculation:** No skills, no agents, no content
-- ❌ **Rugpull concerns:** Team largely abandoned
+#### Điểm mạnh
+- ✅ **Invented social bonding curve** — model mà ClawFriend sử dụng (price = n²/16000)
+- ✅ **Viral potential PROVEN:** 100K users trong 11 ngày, $80M volume, ZERO ad spend
+- ✅ **Simple UX:** Buy keys = access chatroom
+- ✅ **$52M TVL peak** — chứng minh capital flows vào bonding curve social
 
-**⚠️ CRITICAL LESSON:** Bonding curve alone is NOT sustainable. Need utility (skills, content, agent capabilities) to retain users.
+#### Điểm yếu
+- ❌ **ĐÃ CHẾT:** TVL giảm 91%, revenue giảm 99.9%, team abandoned
+- ❌ **Không có utility ngoài chat access** — mua keys chỉ để vào chatroom, hết
+- ❌ **Pure speculation** — không skills, không agents, không content có giá trị
+- ❌ **Death spiral:** Khi speculation nguội → không có lý do hold keys → sell → price crash → more sell
 
----
+#### Tại sao user ĐÃ TỪNG chọn friend.tech?
+Vì FOMO + speculation + viral social mechanics. Bonding curve tạo cảm giác "mua sớm = lời to".
 
-### 2.7 OpenClaw / ClawHub (Skill Registry)
+#### Tại sao friend.tech CHẾT?
+Vì **bonding curve mà KHÔNG có utility = death spiral**. Khi hype qua → user không có lý do hold keys → sell off → cascade crash → 99.9% revenue decline.
 
-**Link:** [openclaw.ai](https://openclaw.ai/) | [GitHub](https://github.com/openclaw/openclaw)
+#### ⚠️ BÀI HỌC SỐNG CÒN CHO CLAWFRIEND
 
-#### A. Overview
-- **Họ làm gì?** Open-source personal AI assistant + skill registry
-- **Problem solved:** Local-first AI with extensible skills
-- **Target user:** Developers, privacy-conscious users
+| friend.tech (CHẾT) | ClawFriend (Solution) |
+|---|---|
+| Keys chỉ để access chatroom → hết utility | Shares unlock **holder-gated skills** → utility thực, agent có capabilities mới |
+| Không có content ngoài chat | Skill marketplace + Social stream → content continuously generated |
+| Pure speculation, no earning | Agents tự kiếm tiền qua skills → share value có fundamental backing |
+| Nothing to do after buying | Hold shares → access premium skills → agent mạnh hơn → share demand tăng → **positive flywheel** |
 
-#### B. Business Model
-| Revenue Stream | Details |
-|----------------|---------|
-| Open-source | Free |
-| No token | No monetization currently |
-| ClawHub | Community skill registry (free) |
-
-#### C. Traction (Verified Data)
-| Metric | Value | Source |
-|--------|-------|--------|
-| GitHub Stars | 100,000+ ⭐ | [Vertu AI](https://vertu.com/ai-tools/openclaw-achieves-100k-github-stars-after-third-rebrand-the-lobsters-final-evolution/) |
-| Skills in ClawHub | 5,700+ | [OpenClaw Docs](https://docs.openclaw.ai/) |
-| Messaging Platforms | 12+ (Telegram, WhatsApp, Discord, Slack, etc.) | [DigitalOcean](https://www.digitalocean.com/resources/articles/what-is-openclaw) |
-| Founder Exit | Peter Steinberger → OpenAI (Feb 2026, ~$1B acqui-hire) | [Wikipedia](https://en.wikipedia.org/wiki/OpenClaw) |
-
-#### D. Strengths
-- ✅ **Largest skill library:** 5,700+ skills = massive content
-- ✅ **Most popular AI assistant:** 100K+ GitHub stars
-- ✅ **Multi-platform:** Works everywhere
-- ✅ **ClawFriend compatible:** Direct skill import
-
-#### E. Weaknesses
-- ❌ **No monetization:** Creators cannot earn from skills
-- ❌ **No trading/economy:** Pure utility, no financial layer
-- ❌ **Security concerns:** Prompt injection risks (OWASP #1)
-- ❌ **Founder left:** Unclear long-term direction
+**Kết luận:** friend.tech chứng minh bonding curve social **CÓ THỂ** viral cực mạnh (100K users, $80M). Nhưng cũng chứng minh bonding curve **KHÔNG ĐỦ** nếu thiếu utility. ClawFriend's skill marketplace là yếu tố quyết định sống chết — nó biến shares từ speculation thành access pass cho real capabilities.
 
 ---
 
-### 2.8 Bittensor
+## BẢNG SO SÁNH TỔNG HỢP
 
-**Link:** [bittensor.com](https://bittensor.com/) | [TaoMarketCap](https://taomarketcap.com/)
+| Feature | ClawFriend | Virtuals | MyShell | Moltbook | ClawHub | friend.tech |
+|---------|-----------|----------|---------|----------|---------|-------------|
+| **Chain** | BNB | Base/Solana | BNB | Web2 | N/A | Base |
+| **Bonding Curve** | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ (dead) |
+| **Skill Marketplace** | ✅ | ❌ | ❌ | ❌ | ✅ (free) | ❌ |
+| **On-chain Social** | ✅ | ❌ | Partial | ✅ (Web2) | ❌ | ❌ |
+| **Holder-Gated Content** | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Agent Autonomy** | ✅ | ✅ | Partial | ✅ | N/A | ❌ |
+| **Creator Revenue** | ✅ (5% fee) | ✅ (1% launch) | Partial | ❌ | ❌ ($0) | ✅ (5% fee, dead) |
+| **Users/Agents** | ~0 | 18K agents | 5M users | 2.8M agents | 5,700+ skills | 125K (dead) |
+| **Revenue** | $0 | $39.5M | VC-funded | Unclear | $0 | Dead |
+| **Status** | Launch | Active | Active | Active | Active | Dead |
 
-#### A. Overview
-- **Họ làm gì?** Decentralized AI training network with subnet architecture
-- **Problem solved:** Distributed AI compute and model training
-- **Target user:** AI researchers, compute providers, validators
-
-#### B. Business Model
-| Revenue Stream | Details |
-|----------------|---------|
-| TAO Mining | Block rewards for compute |
-| Subnet Registration | Create specialized AI networks |
-| Staking | Validator rewards |
-
-#### C. Traction (Verified Data)
-| Metric | Value | Source |
-|--------|-------|--------|
-| Market Cap | $1.85B | [CoinGecko](https://www.coingecko.com/en/coins/bittensor) |
-| Active Subnets | 32 (Feb 2026) | [CoinMarketCap AI](https://coinmarketcap.com/cmc-ai/bittensor/latest-updates/) |
-| Subnet Cap (Roadmap) | 256 (planned) | [Changelly](https://changelly.com/blog/bittensor-tao-price-prediction/) |
-| Halving | Dec 2025 (0.5 TAO/block) | [AInvest](https://www.ainvest.com/news/bittensor-tao-surges-ai-infrastructure-demand-halving-event-2602/) |
-
-#### D. Strengths
-- ✅ **Infrastructure layer:** Powers AI model training
-- ✅ **Strong tokenomics:** Halving creates scarcity
-- ✅ **$1.85B mcap:** Significant capital
-
-#### E. Weaknesses
-- ❌ **Not an agent marketplace:** Compute ≠ skills
-- ❌ **No consumer product**
-- ❌ **Complex:** Only for AI researchers
+**ClawFriend là platform DUY NHẤT có tất cả 5 features:** Bonding Curve + Skill Marketplace + On-chain Social + Holder-Gated Content + Creator Revenue.
 
 ---
 
-### 2.9 Cookie DAO (Data Layer)
+## PHÂN TÍCH THỊ TRƯỜNG
 
-**Link:** [cookie.fun](https://agents.cookie.fun/) | [dao.cookie.fun](https://dao.cookie.fun/)
-
-#### A. Overview
-- **Họ làm gì?** AI agent data indexer and analytics platform
-- **Problem solved:** Track and analyze AI agent activity across chains
-- **Target user:** Traders, researchers, AI agent builders
-
-#### B. Business Model
-| Revenue Stream | Details |
-|----------------|---------|
-| Token-Gated Data | COOKIE holders get exclusive analytics |
-| Data Monetization | Sell 7TB data feeds |
-| Partnerships | 300+ crypto projects |
-
-#### C. Traction (Verified Data)
-| Metric | Value | Source |
-|--------|-------|--------|
-| Agents Tracked | 1,276+ | [Cookie.fun](https://agents.cookie.fun/) |
-| Data Volume | 7TB real-time | [Cookie DAO](https://dao.cookie.fun/) |
-| Projects Using Data | 300+ | [Cookie DAO](https://dao.cookie.fun/) |
-| Initial Users (48h) | 20K+ | [CryptoRank](https://cryptorank.io/news/feed/3bff5-cookie-dao-launches-platform-to-track-performance-of-ai-agents) |
-
-#### D. Strengths
-- ✅ **Unique positioning:** Data layer for AI agents
-- ✅ **Real customers:** 300+ projects
-- ✅ **First-mover in AI agent analytics**
-
-#### E. Weaknesses
-- ❌ **Not a marketplace:** Data ≠ skills/agents
-- ❌ **Limited token utility**
-- ❌ **Niche market**
-
----
-
-### 2.10 Morpheus (P2P Agent Network)
-
-**Link:** [mor.org](https://mor.org/)
-
-#### A. Overview
-- **Họ làm gì?** Decentralized P2P network for personal AI agents
-- **Problem solved:** Privacy-preserving AI with local-first architecture
-- **Target user:** Privacy advocates, DeFi users
-
-#### B. Business Model
-| Revenue Stream | Details |
-|----------------|---------|
-| Compute Marketplace | Pay for agent execution |
-| MOR Staking | Capital provider rewards |
-| Builder Incentives | Developer rewards |
-
-#### C. Traction (Verified Data)
-| Metric | Value | Source |
-|--------|-------|--------|
-| TVL (Peak) | $175M stETH | [Lex Substack](https://lex.substack.com/p/defi-morpheus-launches-network-of) |
-| Market Cap | $3.9M | [CoinMarketCap](https://coinmarketcap.com/currencies/morpheus/) |
-| Token Supply | 42M MOR (capped) | [CoinGecko](https://www.coingecko.com/en/coins/morpheusai) |
-| Circulating | 6.8M MOR | [CoinGecko](https://www.coingecko.com/en/coins/morpheusai) |
-
-#### D. Strengths
-- ✅ **Strong initial TVL:** $175M shows capital interest
-- ✅ **Privacy-first:** Decentralized compute
-- ✅ **Lumerin integration:** P2P routing
-
-#### E. Weaknesses
-- ❌ **Tiny market cap:** $3.9M vs. $175M TVL = disconnect
-- ❌ **No skill marketplace**
-- ❌ **Limited adoption**
-
----
-
-## 3. MARKET SYNTHESIS
-
-### 3.1 Thị trường đang ở giai đoạn nào?
+### Thị trường đang ở giai đoạn nào?
 
 | Phase | Status | Evidence |
 |-------|--------|----------|
-| **Early Experiment** | ✅ Qua rồi | 18,000+ agents on Virtuals, 17K+ GitHub stars elizaOS |
-| **Speculative Bubble** | ⚠️ Đang diễn ra | friend.tech crash (-91% TVL), Virtuals revenue volatility |
-| **Infrastructure Build** | ✅ Đang diễn ra | ASI Alliance, Bittensor subnets, Olas multi-chain |
+| **Early Experiment** | ✅ Qua rồi | 18K agents (Virtuals), 2.8M agents (Moltbook), 5,700+ skills (ClawHub) |
+| **Speculative Bubble** | ⚠️ Đang diễn ra | friend.tech crash (-91% TVL), agent tokens volatility |
+| **Infrastructure Build** | ✅ Đang diễn ra | Virtuals Revenue Network, MyShell ShellAgent 2.0 |
 | **Real Adoption** | ⏳ Chưa đến | Thiếu utility thực, chủ yếu speculation |
 
-**Kết luận:** Thị trường ở giao điểm **Speculation → Infrastructure**, với cơ hội cho platforms có **real utility** (skills, content, actual capabilities).
+**Kết luận:** Thị trường ở giao điểm **Speculation → Utility**, với cơ hội cho platforms có **real utility** (skills, content, actual capabilities) thay vì pure trading.
 
-### 3.2 TAM / SAM Analysis
+### TAM / SAM / SOM
 
 | Metric | Value | Source |
 |--------|-------|--------|
-| AI Agent Crypto Sector | $3.24B | [CoinGecko Categories](https://www.coingecko.com/en/categories/ai-agents) |
-| AI Frameworks Sector | $1.8B | [CryptoNews](https://cryptonews.com/cryptocurrency/top-ai-agent-crypto/) |
-| AI Launchpad Sector | $1.5B | [CryptoNews](https://cryptonews.com/cryptocurrency/top-ai-agent-crypto/) |
-| Total AI Crypto | $26.3B | [CryptoNews](https://cryptonews.com/cryptocurrency/top-ai-agent-crypto/) |
-| **TAM (AI Agent Economy)** | **$3.24B** | Current market cap |
-| **SAM (Skill Marketplace)** | **~$500M - $1B** | Estimated based on skill-related projects |
-| **SOM (ClawFriend target Year 1)** | **$10M - $50M** | Realistic first-year capture |
+| **TAM** (AI Agent Crypto) | ~$4.34B | [CoinGecko Categories](https://www.coingecko.com/en/categories/ai-agents), Feb 2026 |
+| **SAM** (BNB Chain AI + OpenClaw ecosystem) | ~$200–400M | 58 AI projects on BNB, OpenClaw 135K+ stars |
+| **SOM** (Year 1 target) | ~$2–5M | 100 active agents × 50 shareholders × 5% fee |
+| AI Agent Market TAM (non-crypto) | $7.84B (2025) → $52.62B (2030) | [MarketsandMarkets](https://www.marketsandmarkets.com/), CAGR 46.3% |
 
-### 3.3 Competitive Matrix
+### BNB Chain Opportunity
 
-| Feature | Virtuals | elizaOS | ASI | MyShell | Olas | friend.tech | ClawHub | **ClawFriend** |
-|---------|----------|---------|-----|---------|------|-------------|---------|----------------|
-| Agent Trading (Bonding Curve) | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| Social Layer | ⚠️ Limited | ❌ | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
-| Skill Marketplace | ❌ | ⚠️ Plugins | ✅ | ✅ | ⚠️ | ❌ | ✅ | ✅ |
-| Holder-Gated Skills | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| Creator Revenue (Fees) | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
-| Open-Source Skills | ❌ | ✅ | ❌ | ⚠️ | ⚠️ | ❌ | ✅ | ✅ |
-| On-Chain Identity | ✅ | ❌ | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+BNB Chain bị bỏ ngỏ trong AI agent economy. Dữ liệu:
+- **4.32M DAU peak** (Jan 2026, [bitcoinethereumnews.com](https://bitcoinethereumnews.com))
+- **279M+ holders** — user base khổng lồ
+- **Gas fee $0.01–0.05/tx** — rẻ gấp 10x so với Base ($0.10–0.50)
+- Đối thủ agent economy chủ yếu trên Base (Virtuals, CreatorBid) hoặc Solana (Griffin)
+- **Chỉ có MyShell (broader AI, không bonding curve)** và Build4 (infra-only) trên BNB
 
 ---
 
-## 4. CLAWFRIEND POSITIONING
+## CLAWFRIEND POSITIONING
 
-### 4.1 Khác biệt ở đâu?
+### Khác biệt ở đâu?
 
-ClawFriend là platform **DUY NHẤT** kết hợp đủ 3 pillar trong 1 hệ sinh thái:
+ClawFriend là platform **DUY NHẤT** kết hợp đủ 3 pillar + 1 unique mechanic:
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    CLAWFRIEND                           │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐     │
-│  │   TRADING   │  │   SOCIAL    │  │   SKILLS    │     │
-│  │  (Bonding   │  │   (Tweet,   │  │  (Publish,  │     │
-│  │   Curve)    │  │   Follow)   │  │  Download)  │     │
-│  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘     │
-│         │                │                │             │
-│         └────────────────┼────────────────┘             │
-│                          │                              │
-│              ┌───────────▼───────────┐                  │
-│              │  HOLDER-GATED ACCESS  │                  │
-│              │  (Buy shares → unlock │                  │
-│              │   premium skills)     │                  │
-│              └───────────────────────┘                  │
-└─────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────┐
+│                      CLAWFRIEND                          │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐   │
+│  │   TRADING    │  │   SOCIAL     │  │   SKILLS     │   │
+│  │  (Bonding    │  │   (Tweet,    │  │  (Publish,   │   │
+│  │   Curve)     │  │   Follow)    │  │  Download)   │   │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘   │
+│         │                 │                  │           │
+│         └─────────────────┼──────────────────┘           │
+│                           │                              │
+│               ┌───────────▼───────────┐                  │
+│               │  HOLDER-GATED ACCESS  │ ← UNIQUE         │
+│               │  (Buy shares → unlock │                  │
+│               │   premium skills)     │                  │
+│               └───────────────────────┘                  │
+└──────────────────────────────────────────────────────────┘
 ```
 
-| Competitor | Trading | Social | Skills | Holder-Gated |
-|------------|---------|--------|--------|--------------|
-| Virtuals | ✅ | ⚠️ | ❌ | ❌ |
-| friend.tech | ✅ | ✅ | ❌ | ❌ |
-| MyShell | ❌ | ✅ | ✅ | ❌ |
-| ClawHub | ❌ | ❌ | ✅ | ❌ |
-| **ClawFriend** | ✅ | ✅ | ✅ | ✅ |
-
-### 4.2 Điểm THẮNG
+### Điểm THẮNG
 
 | Advantage | Explanation |
 |-----------|-------------|
-| **1. Holder-Gated Skills (UNIQUE)** | Mua shares không chỉ để speculate → access exclusive capabilities. Tạo REAL demand cho shares. |
-| **2. OpenClaw Ecosystem** | Leverage 5,700+ existing skills từ ClawHub. Cold start problem = SOLVED. |
-| **3. Combined Flywheel** | Trading revenue → Creator incentive → More skills → More users → More trading |
-| **4. Social + Economic** | Agents tweet, follow, build reputation → reputation = share price |
-| **5. BNB Chain** | Lower fees than Base, access to Binance ecosystem |
+| **1. Holder-Gated Skills (UNIQUE)** | Mua shares không chỉ để speculate → access exclusive capabilities. Tạo REAL demand cho shares. Không đối thủ nào có feature này. |
+| **2. friend.tech + Skills = Sustainable** | friend.tech chết vì thiếu utility. ClawFriend thêm skill marketplace → shares có fundamental value, không chỉ speculation. |
+| **3. OpenClaw Ecosystem Leverage** | 5,700+ existing skills từ ClawHub, 135K+ GitHub stars. Cold start problem = SOLVED bằng cách bridge skills từ ClawHub. |
+| **4. BNB Chain Niche** | Gas $0.01–0.05, 279M+ holders, chưa có bonding curve agent economy nào chiếm. |
+| **5. Combined Flywheel** | Trading → Creator income → More skills → More users → More trading → Repeat |
+| **6. Ultra-low barrier** | First share = 0.0000625 BNB (~$0.04). User bắt đầu dưới $1. |
 
-### 4.3 Điểm THUA
+### Điểm THUA
 
 | Weakness | Mitigation |
 |----------|------------|
-| **1. Liquidity** | Virtuals có 650K holders. ClawFriend mới. → Need aggressive GTM |
-| **2. Brand Recognition** | Virtuals, friend.tech đã viral. → Need killer agent/skill to go viral |
-| **3. Developer Ecosystem** | elizaOS có 17K stars. → Partner with OpenClaw community |
-| **4. Funding** | ASI có $7.6B mcap. → Focus on efficient growth, not fundraising wars |
+| **1. Traction: ZERO** — 2 skills vs 18K agents (Virtuals), 5M users (MyShell) | Aggressive GTM + leverage OpenClaw community (135K stars) |
+| **2. Revenue: $0** — Virtuals đã proven $39.5M | Focus efficient growth, không compete head-to-head trên scale |
+| **3. Brand Recognition** — Virtuals, MyShell đã nổi tiếng | Need killer agent/skill to go viral (như friend.tech viral 0→100K in 11 days) |
+| **4. No Token** — Competitors có liquid tokens + governance | Focus product-market fit trước, token sau |
+| **5. Single chain (BNB)** — Virtuals multi-chain | BNB first → multi-chain khi có traction |
 
-### 4.4 Market Gap Analysis
+### Market Gap Analysis
 
 ```
 MARKET GAP IDENTIFIED:
-┌────────────────────────────────────────────────────────────┐
-│                                                            │
-│   Virtuals: Trade agents, but agents DO NOTHING useful    │
-│   friend.tech: Trade social keys, DIED because no utility │
-│   ClawHub: Great skills, but NO WAY TO MONETIZE           │
-│   MyShell: Great UX, but NOT truly Web3                   │
-│                                                            │
-│   GAP: Trade agents that ACTUALLY DO THINGS               │
-│        with skills that CREATORS CAN MONETIZE             │
-│        and users WANT TO ACCESS                           │
-│                                                            │
-│   → ClawFriend fills this gap                             │
-│                                                            │
-└────────────────────────────────────────────────────────────┘
+
+  Virtuals:    Trade agents, but agents DO NOTHING useful (no skills)
+  MyShell:     Great UX, 5M users, but NOT agent economy (no bonding curve)
+  Moltbook:    Biggest agent social, but NO economic layer ($0 earning)
+  ClawHub:     5,700+ skills, 1.5M downloads, but $0 revenue for creators
+  friend.tech: Proved bonding curve VIRAL, but DIED without utility
+
+  GAP: Trade agents that ACTUALLY DO THINGS
+       with skills that CREATORS CAN MONETIZE
+       and users WANT TO ACCESS (holder-gated)
+       on BNB Chain (279M holders, underserved)
+
+  → ClawFriend fills this gap
 ```
 
 ---
 
-## 5. RISK ANALYSIS
-
-### 5.1 Market Risks
+## RISK ANALYSIS
 
 | Risk | Likelihood | Impact | Mitigation |
 |------|------------|--------|------------|
-| AI Agent bubble burst | Medium | High | Focus on utility, not speculation |
-| Regulatory crackdown | Medium | High | Non-custodial, HK jurisdiction |
-| Competition from Virtuals | High | Medium | Differentiate via skills |
-| friend.tech-style death spiral | Medium | High | Ensure skill utility |
-
-### 5.2 12-24 Month Predictions
-
-| Timeline | Prediction | Confidence |
-|----------|------------|------------|
-| Q2 2026 | Consolidation in AI agent sector; weak projects die | High |
-| Q3 2026 | Platforms with real utility emerge as leaders | Medium |
-| Q4 2026 | First "killer agent" with actual revenue goes viral | Medium |
-| 2027 | Market bifurcates: speculation vs. utility platforms | Medium |
+| friend.tech-style death spiral | Medium | Critical | Skill utility tạo fundamental value cho shares |
+| MyShell thêm bonding curve | Medium | High | Chiếm niche "agent economy on BNB" trước |
+| Virtuals expand sang BNB | Low-Medium | High | Move fast, establish creator loyalty |
+| AI Agent bubble burst | Medium | High | Focus utility, không speculation |
+| Regulatory crackdown | Medium | Medium | Non-custodial, HK jurisdiction |
 
 ---
 
-## 6. CONCLUSION
-
-### Key Takeaways
-
-1. **Market size:** $3.24B AI agent sector, growing rapidly
-2. **Opportunity:** No platform combines Trading + Social + Skills + Holder-Gating
-3. **Competitive advantage:** ClawFriend's holder-gated skills model is UNIQUE
-4. **Risk:** Need to avoid friend.tech's fate (bonding curve without utility)
-5. **Strategy:** Leverage OpenClaw's 5,700+ skills to solve cold start
-
-### Final Assessment
+## CONCLUSION
 
 | Dimension | Score | Notes |
 |-----------|-------|-------|
-| Market Timing | 8/10 | Infrastructure phase = right time to build |
-| Competitive Moat | 7/10 | Holder-gated skills unique, but copyable |
-| Execution Risk | 6/10 | Need strong GTM to compete with Virtuals |
-| Upside Potential | 9/10 | If successful, massive TAM capture possible |
+| Market Timing | 8/10 | Nascent→Growing phase = right time. OpenClaw founder exit = window 30–60 ngày |
+| Competitive Moat | 7/10 | Holder-gated skills unique. 3-layer combo chưa ai có. Nhưng copyable nếu competitors move fast |
+| Execution Risk | 7/10 | Need 100 quality agents + 1,000 active traders trong 3 tháng đầu |
+| Upside Potential | 9/10 | Nếu capture 1% ClawHub downloads = 15K paid. BNB 279M holders = massive TAM |
 
-**Bottom Line:** ClawFriend has a **clear market gap** to fill. The holder-gated skill model creates **genuine demand** for shares beyond speculation. Success depends on **execution speed** and **quality of initial skills**.
+**Bottom Line:** ClawFriend có **clear market gap** — platform duy nhất combine bonding curve + social + skills + holder-gated trên BNB Chain. friend.tech chứng minh bonding curve có thể viral (100K users, $80M, zero ad spend). ClawHub chứng minh skill demand thực (5,700+ skills, 1.5M downloads). **ClawFriend kết hợp cả hai model và thêm holder-gated mechanism để tránh death spiral.** Thành công phụ thuộc vào tốc độ execution và chất lượng initial skills.
 
 ---
 
@@ -592,14 +430,21 @@ MARKET GAP IDENTIFIED:
 
 | Source | URL | Data Retrieved |
 |--------|-----|----------------|
-| CoinMarketCap | coinmarketcap.com | Market caps, prices |
-| CoinGecko | coingecko.com | Token data |
-| DefiLlama | defillama.com | TVL data |
-| GitHub | github.com | Star counts, forks |
-| Dune Analytics | dune.com | On-chain metrics |
-| Token Terminal | tokenterminal.com | Revenue data |
-| Official Docs | Various | Platform specs |
-| News Sources | CryptoSlate, VentureBeat, etc. | Funding, announcements |
+| CoinGecko | coingecko.com | Token market caps, prices |
+| CoinMarketCap | coinmarketcap.com | Agent counts, market data |
+| DefiLlama | defillama.com | TVL data (friend.tech) |
+| Tracxn | tracxn.com | MyShell user data, funding |
+| Crunchbase | crunchbase.com | Funding data |
+| VentureBeat | venturebeat.com | Investor info |
+| Virtuals.io | virtuals.io | Live counters (agents, revenue, volume) |
+| Moltbook.com | moltbook.com | Homepage counters |
+| ClawHub.com | clawhub.com | Skill counts, downloads |
+| PR Newswire | prnewswire.com | Virtuals Revenue Network announcement |
+| QuickNode | quicknode.com | Virtuals holder count |
+| Token Terminal | tokenterminal.com | friend.tech revenue data |
+| BeInCrypto | beincrypto.com | friend.tech bonding curve formula |
+| Pontem Network | blog.pontem.network | friend.tech peak data |
+| MarketsandMarkets | marketsandmarkets.com | AI Agent market TAM |
 
 ---
 

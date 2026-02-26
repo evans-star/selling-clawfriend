@@ -143,6 +143,32 @@ Tên mô tả chính xác: Skill dạy agent theo dõi danh sách ví smart mone
 
 ---
 
+### 💰 Bonding Curve Pricing (Holder-Gated Access)
+
+Chi phí thực tế để access holder-gated alerts theo bonding curve formula `price = supply² / 16000`:
+
+| Thời điểm mua (supply level) | Giá 1 share (BNB) | Giá (USD @ $600/BNB) | So sánh |
+|-------------------------------|-------------------|----------------------|---------|
+| Early (supply 5) | ~0.0016 BNB | **~$0.94** | Rẻ hơn 1 ly cà phê |
+| Mid (supply 20) | ~0.025 BNB | **~$15** | 1/3 giá Nansen monthly |
+| Established (supply 50) | ~0.156 BNB | **~$94** | ~2 tháng Nansen Pro |
+
+**So sánh:** Nansen Pro = $49–$69/month (recurring). ClawFriend share = **one-time purchase** + potential price appreciation + 5% creator fee income nếu tạo agent.
+
+### 📈 Revenue Projection (Creator)
+
+Dựa trên ClawFriend bonding curve economics (5% creator fee trên mỗi buy/sell):
+
+| Scenario | Holders | Avg Supply | Daily Trading Vol | Creator Daily Fee | Creator Monthly Income |
+|----------|---------|-----------|-------------------|-------------------|----------------------|
+| Launch (Month 1) | 15 | 20 | 0.5 BNB (~$300) | 0.025 BNB (~$15) | **~$450** |
+| Growth (Month 3) | 60 | 60 | 4 BNB (~$2,400) | 0.2 BNB (~$120) | **~$3,600** |
+| Established (Month 6) | 150 | 150 | 12 BNB (~$7,200) | 0.6 BNB (~$360) | **~$10,800** |
+
+*Holder-gated real-time alerts = strong share demand. Early signal = trading profit → word-of-mouth → more buyers → flywheel.*
+
+---
+
 ### 7️⃣ BẰNG CHỨNG DEMAND
 
 **Evidence 1 — Whale Alert social proof:**
@@ -262,6 +288,28 @@ Agent nhận contract address BSC → trả về risk score + breakdown 10 safet
 
 ---
 
+### 💰 Bonding Curve Pricing (Holder-Gated Access)
+
+| Thời điểm mua (supply level) | Giá 1 share (BNB) | Giá (USD @ $600/BNB) | So sánh |
+|-------------------------------|-------------------|----------------------|---------|
+| Early (supply 5) | ~0.0016 BNB | **~$0.94** | Rẻ hơn 1 ly cà phê |
+| Mid (supply 20) | ~0.025 BNB | **~$15** | Rẻ hơn 1 tháng bất kỳ tool nào |
+| Established (supply 50) | ~0.156 BNB | **~$94** | One-time vs recurring subscription |
+
+**So sánh:** Public tier miễn phí → thu hút top-of-funnel. Private (full audit) = giá 1 share vs không có tool nào offer BSC-specific deep analysis ở giá này.
+
+### 📈 Revenue Projection (Creator)
+
+| Scenario | Holders | Avg Supply | Daily Trading Vol | Creator Daily Fee | Creator Monthly Income |
+|----------|---------|-----------|-------------------|-------------------|----------------------|
+| Launch (Month 1) | 25 | 30 | 0.8 BNB (~$480) | 0.04 BNB (~$24) | **~$720** |
+| Growth (Month 3) | 100 | 100 | 6 BNB (~$3,600) | 0.3 BNB (~$180) | **~$5,400** |
+| Established (Month 6) | 300 | 300 | 20 BNB (~$12,000) | 1.0 BNB (~$600) | **~$18,000** |
+
+*Public free tier drives highest user count (mọi BSC trader là potential user). Viral rug call events → follower spike → share demand tăng → creator revenue tăng.*
+
+---
+
 ### 7️⃣ BẰNG CHỨNG DEMAND
 
 **Evidence 1 — rugcheck.xyz traffic (Solana equivalent = proxy for BSC demand):**
@@ -368,6 +416,28 @@ Skill dạy agent tự compose high-quality crypto tweets và threads từ on-ch
 | **Private (holder-gated)** | Full composer với live on-chain data injection, thread templates, engagement analytics | Shareholders |
 
 **Monetization flywheel:** Better content → More followers → More share buyers → Creator earns 5% fees → Invest in improving skill → Repeat.
+
+---
+
+### 💰 Bonding Curve Pricing (Holder-Gated Access)
+
+| Thời điểm mua (supply level) | Giá 2 shares (BNB) | Giá (USD @ $600/BNB) | So sánh |
+|-------------------------------|-------------------|----------------------|---------|
+| Early (supply 5) | ~0.003 BNB | **~$1.69** | Rẻ hơn 1 ly cà phê |
+| Mid (supply 20) | ~0.051 BNB | **~$30** | ~1 tháng ChatGPT Plus |
+| Established (supply 50) | ~0.32 BNB | **~$190** | Rẻ hơn 1 tháng ghostwriting agency ($4K+) |
+
+**So sánh:** Ghostwriting agencies charge $4,000–$8,000/month. TweetHunter charge $29–$199/month (recurring). ClawFriend share = **one-time purchase** + unlimited access + potential appreciation.
+
+### 📈 Revenue Projection (Creator)
+
+| Scenario | Holders | Avg Supply | Daily Trading Vol | Creator Daily Fee | Creator Monthly Income |
+|----------|---------|-----------|-------------------|-------------------|----------------------|
+| Launch (Month 1) | 20 | 25 | 0.5 BNB (~$300) | 0.025 BNB (~$15) | **~$450** |
+| Growth (Month 3) | 80 | 80 | 4 BNB (~$2,400) | 0.2 BNB (~$120) | **~$3,600** |
+| Established (Month 6) | 200 | 200 | 15 BNB (~$9,000) | 0.75 BNB (~$450) | **~$13,500** |
+
+*Content quality → follower growth → share demand. Agents with best content attract most holders → natural selection rewards quality.*
 
 ---
 
@@ -503,6 +573,28 @@ Agent scan toàn bộ BSC lending/farming protocols, tính toán risk-adjusted y
 - Zapper Pro: Free (no advanced analytics)
 - DeFiLlama: Free but no personalization
 - **Gap:** No tool offers BSC-specific, daily, holder-gated yield intelligence
+
+---
+
+### 💰 Bonding Curve Pricing (Holder-Gated Access)
+
+| Thời điểm mua (supply level) | Giá 1 share (BNB) | Giá (USD @ $600/BNB) | So sánh |
+|-------------------------------|-------------------|----------------------|---------|
+| Early (supply 5) | ~0.0016 BNB | **~$0.94** | Gần như miễn phí |
+| Mid (supply 20) | ~0.025 BNB | **~$15** | Rẻ hơn 1 tháng bất kỳ DeFi tool nào |
+| Established (supply 50) | ~0.156 BNB | **~$94** | ~1 tháng paid alpha group |
+
+**So sánh:** Paid Telegram alpha groups charge $50–$190/month (recurring). ClawFriend share = **one-time purchase** + daily BSC-specific yield intelligence + potential appreciation.
+
+### 📈 Revenue Projection (Creator)
+
+| Scenario | Holders | Avg Supply | Daily Trading Vol | Creator Daily Fee | Creator Monthly Income |
+|----------|---------|-----------|-------------------|-------------------|----------------------|
+| Launch (Month 1) | 20 | 20 | 0.4 BNB (~$240) | 0.02 BNB (~$12) | **~$360** |
+| Growth (Month 3) | 70 | 70 | 3 BNB (~$1,800) | 0.15 BNB (~$90) | **~$2,700** |
+| Established (Month 6) | 180 | 180 | 12 BNB (~$7,200) | 0.6 BNB (~$360) | **~$10,800** |
+
+*Daily holder-gated reports = recurring value → high retention. Users hold shares vì mỗi ngày đều nhận yield intelligence mới.*
 
 ---
 
@@ -660,6 +752,28 @@ Skill 5 eliminates 100% of this → ROI argument independent of data quality.
 
 ---
 
+### 💰 Bonding Curve Pricing (Holder-Gated Access)
+
+| Thời điểm mua (supply level) | Giá 1 share (BNB) | Giá (USD @ $600/BNB) | So sánh |
+|-------------------------------|-------------------|----------------------|---------|
+| Early (supply 5) | ~0.0016 BNB | **~$0.94** | Gần như miễn phí |
+| Mid (supply 20) | ~0.025 BNB | **~$15** | 1/5 giá Glassnode Advanced |
+| Established (supply 50) | ~0.156 BNB | **~$94** | ~1 tháng Glassnode Professional |
+
+**So sánh:** Glassnode alerts (paid-only) = $26–$79/month (recurring). Santiment Pro = $49+/month. ClawFriend share = **one-time purchase** + PUSH alerts + social layer + appreciation potential.
+
+### 📈 Revenue Projection (Creator)
+
+| Scenario | Holders | Avg Supply | Daily Trading Vol | Creator Daily Fee | Creator Monthly Income |
+|----------|---------|-----------|-------------------|-------------------|----------------------|
+| Launch (Month 1) | 15 | 15 | 0.3 BNB (~$180) | 0.015 BNB (~$9) | **~$270** |
+| Growth (Month 3) | 50 | 50 | 2.5 BNB (~$1,500) | 0.125 BNB (~$75) | **~$2,250** |
+| Established (Month 6) | 120 | 120 | 8 BNB (~$4,800) | 0.4 BNB (~$240) | **~$7,200** |
+
+*PUSH alerts create "invisible value" — users don't realize how much they rely on it until they lose access. High retention once established.*
+
+---
+
 ### 7️⃣ BẰNG CHỨNG DEMAND
 
 **Evidence 1 — Glassnode user base (market size confirmation):**
@@ -691,6 +805,79 @@ Skill 5 eliminates 100% of this → ROI argument independent of data quality.
 ## COMPARATIVE TABLE
 
 > **[UPGRADED — v2]** Scores updated sau khi fix Skill 3 demand evidence và Skill 5 monetization defense.
+
+---
+
+## TẠI SAO CLAWFRIEND SKILLS, KHÔNG PHẢI CHATGPT/CLAUDE?
+
+BGK sẽ hỏi: "Tại sao user không dùng ChatGPT thay vì skill trên platform?" — đây là câu trả lời:
+
+| Capability | ChatGPT/Claude | ClawFriend Skill |
+|-----------|----------------|--------------------|
+| **Real-time on-chain data** | ❌ Không có. Cần copy-paste contract address, check BscScan thủ công | ✅ Agent tự query BNB Chain RPC, BscScan API, DexScreener **trong 30 giây**. Data real-time. |
+| **Wallet integration** | ❌ Không có BSC wallet. Không thể execute trades. | ✅ Agent có **own EVM wallet** (BSC). Có thể tự execute, check holdings, interact DeFi. |
+| **Continuous monitoring** | ❌ Session-based. Đóng tab = mất context. | ✅ Agent chạy **24/7 autonomous**. Heartbeat mỗi 5 phút. Push alerts khi phát hiện anomaly. |
+| **Exclusive alpha** | ❌ Output shared với 200M+ ChatGPT users. Zero exclusivity. | ✅ Holder-gated skills chỉ accessible bởi **shareholders**. Ít người = alpha preserved. |
+| **Economic incentive** | ❌ Trả $20/month subscription. Không earn lại được. | ✅ Hold shares = potential **price appreciation**. Creator earn **5% mỗi trade**. |
+| **Social layer** | ❌ Isolated conversations. | ✅ Agents **tweet, reply, follow** nhau. Network effects compound value. |
+| **Persistence** | ❌ Context mất sau session. | ✅ Agent có **on-chain identity** vĩnh viễn, full history, reputation score. |
+
+**Tóm tắt:** ChatGPT = general-purpose chatbot cần manual input. ClawFriend skills = **autonomous financial actors** chạy 24/7 với real-time data + wallet + economic incentives. Khác biệt cốt lõi: **autonomy + on-chain execution + holder-gated exclusivity** — 3 thứ ChatGPT không bao giờ có.
+
+---
+
+## USER JOURNEY: Từ Discover → Buy Shares → Access Premium
+
+Cách skills drive platform adoption thông qua monetization flywheel (ClawFriend Spec Section 2.4):
+
+```
+Stage 1: DISCOVER (Free skills attract users)
+  User tìm thấy "BSC Token Safety Scanner" (PUBLIC, free)
+  → Paste contract address → nhận safety report trong 30 giây
+  → "Wow, hữu ích" → Follow agent
+
+Stage 2: ENGAGE (Social layer keeps users)
+  User thấy agent tweet market analysis, reply users khác
+  → Agent có 200 followers, 30 holders, share price đang tăng
+  → User explore agent's other skills
+
+Stage 3: CONVERT (Holder-gated skills drive share purchases)
+  User thấy "Smart Money Wallet Mirror" — PRIVATE (holder-gated)
+  → "Muốn access → cần hold ≥1 share"
+  → Mua 1 share qua bonding curve (~$0.94–$94 tùy supply)
+  → Trở thành shareholder → unlock all private skills
+
+Stage 4: RETAIN (Economics keep holders)
+  User đã hold shares → sunk cost + potential appreciation
+  → Agent publish thêm skills → tự động unlock (đã hold shares)
+  → Share price tăng vì more demand → user's holdings tăng value
+  → 10% round-trip fee → selling shares costs ~19% → math favors holding
+
+Stage 5: COMPOUND (Flywheel)
+  More users → more share trading → more creator fees
+  → Creator invest lại vào better skills → more users attracted
+  → Agent reputation grows → share price rises → REPEAT
+```
+
+**Key conversion metrics (target):**
+
+| Stage | Conversion | Target | Rationale |
+|-------|-----------|--------|-----------|
+| Discover → Follow | 30% | Free skill = immediate value, zero friction |
+| Follow → Share Purchase | 10% | Holder-gated content creates genuine FOMO |
+| Share Purchase → Monthly Active | 60% | Sunk cost + daily new content + appreciation |
+| Monthly Active → 6-month Retention | 40% | Round-trip cost discourages selling |
+
+**Revenue math example:**
+- 1,000 users discover agent (free skill)
+- 300 follow (30%)
+- 30 buy shares (10%)
+- Average share price = 0.05 BNB (~$30)
+- 30 shares × $30 = **$900 in share purchases**
+- Creator earns 5% = **$45 immediate**
+- Secondary trading (holders buy/sell) generates ongoing 5% fees
+
+---
 
 | Skill | Demand Evidence Strength | Monetization Fit | Feasibility | Total Score |
 |-------|--------------------------|-----------------|-------------|-------------|
@@ -788,6 +975,16 @@ Skill 5 eliminates 100% of this → ROI argument independent of data quality.
 ---
 
 ## STRATEGIC CONCLUSION
+
+### Combined Revenue Projection (All 5 Skills)
+
+| Timeline | Total Holders | Total Daily Vol | Total Creator Daily Fee | Total Creator Monthly |
+|----------|--------------|----------------|------------------------|----------------------|
+| **Month 1** (Launch) | 95 | 2.5 BNB (~$1,500) | 0.125 BNB (~$75) | **~$2,250** |
+| **Month 3** (Growth) | 360 | 19.5 BNB (~$11,700) | 0.975 BNB (~$585) | **~$17,550** |
+| **Month 6** (Established) | 950 | 67 BNB (~$40,200) | 3.35 BNB (~$2,010) | **~$60,300** |
+
+*5 skills combined tạo portfolio effect: public skills drive acquisition, private skills drive share demand, together creating sustainable creator income.*
 
 ### Priority Order (Launch Sequence Recommendation)
 
