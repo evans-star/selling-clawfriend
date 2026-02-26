@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ClawFriend Go-To-Market Strategy</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    
+    <!-- Custom Theme for Web3 Vibe -->
+    <style>
+        /* Base Variables */
+        :root {
+            --bg-color: #0b0f19;
+            --text-color: #e2e8f0;
+            --primary-accent: #00ffcc; /* Neon Cyan */
+            --secondary-accent: #b829ff; /* Neon Purple */
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(0, 255, 204, 0.2);
+            --glass-bg: rgba(11, 15, 25, 0.7);
+        }
+
+        /* Overall Reset & Typography */
+        body {
+            background: radial-gradient(circle at 50% 50%, #1a1b41 0%, #0b0f19 100%);
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+        }
+
+        .reveal {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+        }
+
+        .reveal h1, .reveal h2, .reveal h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            text-transform: none;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+        }
+
+        .reveal h1 {
+            font-size: 3.5em;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary-accent), var(--secondary-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 0px 20px rgba(184, 41, 255, 0.3);
+        }
+
+        .reveal h2 {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: var(--primary-accent);
+            text-align: left;
+            border-bottom: 2px solid var(--card-border);
+            padding-bottom: 10px;
+        }
+
+        .reveal h3 {
+            font-size: 1.5em;
+            color: #94a3b8;
+        }
+
+        .reveal p, .reveal li {
+            font-size: 0.9em;
+            line-height: 1.6;
+            color: #cbd5e1;
+            text-align: left;
+        }
+
+        /* Utility Classes */
+        .highlight-cyan {
+            color: var(--primary-accent);
+            font-weight: 600;
+            text-shadow: 0 0 8px rgba(0, 255, 204, 0.4);
+        }
+
+        .highlight-purple {
+            color: var(--secondary-accent);
+            font-weight: 600;
+            text-shadow: 0 0 8px rgba(184, 41, 255, 0.4);
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        /* Layout & Components */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 255, 204, 0.15);
+            border-color: rgba(0, 255, 204, 0.5);
+        }
+
+        .glass-card h4 {
+            color: var(--text-color);
+            margin-top: 0;
+            font-size: 1.2em;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 10px;
+        }
+
+        /* Lists */
+        .reveal ul {
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        
+        .reveal ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .reveal ul li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-accent);
+            font-size: 1.2em;
+        }
+
+        /* Tables */
+        .reveal table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.75em;
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .reveal th {
+            background: rgba(0, 255, 204, 0.1);
+            color: var(--primary-accent);
+            padding: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--card-border);
+        }
+
+        .reveal td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: #e2e8f0;
+        }
+
+        .reveal tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .reveal tbody tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Tags / Badges */
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.6em;
+            font-weight: bold;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            background: rgba(184, 41, 255, 0.15);
+            color: var(--secondary-accent);
+            border: 1px solid rgba(184, 41, 255, 0.3);
+        }
+
+        .tag.primary {
+            background: rgba(0, 255, 204, 0.15);
+            color: var(--primary-accent);
+            border: 1px solid rgba(0, 255, 204, 0.3);
+        }
+
+        /* Controls & Progress */
+        .reveal .controls { color: var(--primary-accent); }
+        .reveal .progress { color: var(--secondary-accent); }
+
+        /* Step List Funnel */
+        .funnel-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background: rgba(255,255,255,0.02);
+            padding: 10px 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-accent);
+        }
+        .funnel-step .num {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--secondary-accent);
+            margin-right: 20px;
+            min-width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1: Title -->
+            <section>
+                <h1 style="font-size: 4em; margin-bottom: 10px;">ClawFriend</h1>
+                <h3 class="text-center" style="color: #fff; font-size: 1.8em;">Chiến lược Go-To-Market & Kế hoạch Phân phối</h3>
+                <br>
+                <div class="glass-card" style="display: inline-block; padding: 15px 40px; text-align: center;">
+                    <p style="margin:0; text-align: center; font-size: 1.2em;">
+                        <span class="highlight-purple">Người trình bày:</span> Evans
+                    </p>
+                </div>
+            </section>
+
+            <!-- Slide 2: Market Context -->
+            <section>
+                <h2>1. Tổng quan & Lợi thế</h2>
+                <p>Thị trường AI Agent Web3 đang ở giai đoạn "Nascent-to-Growing" với định giá <span class="highlight-cyan">~$4.34B</span>.</p>
+                
+                <div class="grid-2">
+                    <div class="glass-card">
+                        <h4>❌ Khoảng trống thị trường</h4>
+                        <p style="font-size: 0.85em;">
+                            • <strong>Virtuals Protocol:</strong> Không có Skill Marketplace.<br>
+                            • <strong>MyShell:</strong> Thiếu Bonding Curve (kinh tế).<br>
+                            • <strong>Moltbook:</strong> Mạng xã hội lớn nhưng zero revenue.
+                        </p>
+                    </div>
+                    <div class="glass-card" style="border-color: rgba(184, 41, 255, 0.4);">
+                        <h4>✅ Giải pháp ClawFriend</h4>
+                        <p style="font-size: 0.85em; margin-bottom: 10px;">Hệ sinh thái duy nhất kết hợp:</p>
+                        <span class="tag primary">Bonding Curve</span>
+                        <span class="tag primary">Social Network</span>
+                        <span class="tag primary">Skill Marketplace</span>
+                        <p style="font-size: 0.7em; margin-top: 15px; color: #94a3b8;">Tập trung vào BNB Chain (đang bị bỏ ngỏ).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3: Distribution Goals -->
+            <section>
+                <h2>2. Mục tiêu Tháng 1</h2>
+                <div class="glass-card">
+                    <ul>
+                        <li><span class="highlight-cyan">Target chính:</span> Đạt <strong style="color: #fff; font-size: 1.2em;">1,000 users</strong> đầu tiên trong 30 ngày.</li>
+                        <li><span class="highlight-purple">Ngân sách (Paid):</span> Cố định ở mức <strong>$10,000</strong>.</li>
+                        <li><span class="highlight-cyan">Blended CAC:</span> Tối ưu ở mức <strong>≤ $15/user</strong>.</li>
+                        <li><span class="highlight-purple">Chiến lược cốt lõi:</span> Biến Agent thành tài sản sinh lời thông qua <em>Holder-Gated Skills</em>.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 4: Target Audience -->
+            <section>
+                <h2>3. Chân dung Khách hàng</h2>
+                <p>Tập trung vào nhóm Crypto Traders trên Twitter.</p>
+                
+                <div class="grid-2">
+                    <div class="glass-card">
+                        <h4>Audience #1: Rug Pull Avoiders</h4>
+                        <p style="font-size: 0.8em;">
+                            • Follow: @BscScan, @GoPlusSecurity.<br>
+                            • Pain point: Sợ scam/rug pull trên BSC.<br>
+                            • Need: Tool check contract miễn phí, nhanh.
+                        </p>
+                    </div>
+                    <div class="glass-card">
+                        <h4>Audience #2: Whale Trackers</h4>
+                        <p style="font-size: 0.8em;">
+                            • Follow: @DefiLlama, @lookonchain.<br>
+                            • Pain point: Nansen quá đắt ($49-$69/tháng).<br>
+                            • Need: Alert dòng tiền Smart Money real-time.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 5: Core Strategy -->
+            <section>
+                <h2>4. Chiến lược Phễu (Funnel)</h2>
+                <p style="font-style: italic; color: #94a3b8; margin-bottom: 20px;">"Dùng tool miễn phí để kéo Traffic, dùng Utility để chốt Sale."</p>
+                
+                <div style="margin-top: 30px;">
+                    <div class="funnel-step">
+                        <div class="num">01</div>
+                        <div>
+                            <span class="highlight-cyan">Top-of-Funnel (Hook):</span> Cung cấp <strong>BSC Token Safety Scanner</strong> miễn phí để thu hút users vào nền tảng.
+                        </div>
+                    </div>
+                    <div class="funnel-step">
+                        <div class="num">02</div>
+                        <div>
+                            <span class="highlight-purple">Mid-Funnel (Convert):</span> Khóa các kỹ năng xịn (Premium) đằng sau cơ chế <strong>Holder-Gated</strong>.
+                        </div>
+                    </div>
+                    <div class="funnel-step">
+                        <div class="num">03</div>
+                        <div>
+                            <span class="highlight-cyan">Bottom-Funnel (Retain):</span> User phải mua Share (Bonding Curve) của Agent để sử dụng Skill. Tạo ra giá trị nội tại.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 6: Budget Allocation -->
+            <section>
+                <h2>5. Phân bổ Ngân sách ($10K)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kênh (Channel)</th>
+                            <th>Ngân sách</th>
+                            <th>Est. Sign-ups</th>
+                            <th>Vai trò / Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="highlight-cyan">Twitter/X Ads</span> (50%)</td>
+                            <td>$5,000</td>
+                            <td>250</td>
+                            <td>Target follower của DefiLlama, WhaleAlert. Chạy video demo 15s.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="highlight-purple">KOL Micro-Seeding</span> (30%)</td>
+                            <td>$3,000</td>
+                            <td>180</td>
+                            <td>Thuê 5-7 Micro KOLs trên BSC (tin cậy cao hơn Ads).</td>
+                        </tr>
+                        <tr>
+                            <td><span class="highlight-cyan">Deploy Bounty</span> (20%)</td>
+                            <td>$2,000</td>
+                            <td>240</td>
+                            <td>Thưởng $50 USDT cho 40 users đầu tiên setup Agent & tweet.</td>
+                        </tr>
+                        <tr style="background: rgba(255,255,255,0.02);">
+                            <td><span style="color:#94a3b8">Organic (0%)</span></td>
+                            <td>$0</td>
+                            <td>180</td>
+                            <td>Mirror.xyz SEO & Dev Outreach.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Slide 7: Holder-Gated Skills -->
+            <section>
+                <h2>6. Tiện ích: Các Kỹ năng (Skills)</h2>
+                <p>Danh sách các skill tạo ra dòng tiền (Đã kiểm chứng Demand):</p>
+                
+                <div class="grid-2" style="font-size: 0.9em;">
+                    <div class="glass-card">
+                        <span class="tag primary">API Miễn phí</span>
+                        <h4>Smart Money Mirror</h4>
+                        <p style="font-size: 0.85em; margin-top: 10px;">Theo dõi ví cá mập BSC. Bắn thông báo Real-time cho Holders.<br><span style="color:#94a3b8">Thay thế: Nansen ($69/tháng)</span></p>
+                    </div>
+                    <div class="glass-card">
+                        <span class="tag primary">Push Model</span>
+                        <h4>On-Chain Sentiment</h4>
+                        <p style="font-size: 0.85em; margin-top: 10px;">Phân tích tâm lý thị trường và đẩy thông báo cảnh báo sớm.<br><span style="color:#94a3b8">Thay thế: Glassnode Alert</span></p>
+                    </div>
+                    <div class="glass-card" style="grid-column: span 2;">
+                        <span class="tag purple">SaaS Alternative</span>
+                        <h4>Alpha Thread Composer</h4>
+                        <p style="font-size: 0.85em; margin-top: 10px;">Tự động viết Thread Twitter chất lượng cao từ dữ liệu On-chain. (Cạnh tranh với TweetHunter $29-$199/tháng).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8: Summary -->
+            <section>
+                <h2 class="text-center">7. Lộ trình Thực thi</h2>
+                <div class="glass-card" style="margin: 0 auto; max-width: 800px;">
+                    <ul style="font-size: 0.95em;">
+                        <li><span class="highlight-cyan">Tuần 1:</span> Setup Twitter Pixel, Research List KOLs, Launch Contest 40 Slots ($2k).</li>
+                        <li><span class="highlight-purple">Tuần 2:</span> Chạy 3 Ads A/B Test ($1.2k), Lên bài 3 KOLs Micro.</li>
+                        <li><span class="highlight-cyan">Tuần 3:</span> Scale winning Ads, Retargeting khách truy cập, Lên bài KOL Mid-tier.</li>
+                        <li><span class="highlight-purple">Tuần 4:</span> Đánh giá CAC, tổng kết 1,000 Users, chuẩn bị Phase 2.</li>
+                    </ul>
+                </div>
+                
+                <div style="margin-top: 40px; text-align: center;">
+                    <h1 style="font-size: 3em; margin-bottom: 5px;">Q & A</h1>
+                    <p style="color: #94a3b8;">Cảm ơn mọi người đã lắng nghe!</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Reveal.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        // Initialize Reveal.js with adjusted configs for better UX
+        Reveal.initialize({
+            hash: true,
+            slideNumber: 'c/t',
+            transition: 'slide', // Switched to slide for better flow
+            transitionSpeed: 'fast',
+            autoAnimate: true,
+            center: false, // Turn off center to allow top-alignment of content
+            margin: 0.1,
+            controlsTutorial: false,
+            width: 1100, // Make slides slightly wider
+        });
+    </script>
+</body>
+</html>
